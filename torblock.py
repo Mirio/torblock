@@ -25,6 +25,7 @@
 import urllib2, subprocess, shlex, time
 
 tor_list = urllib2.urlopen('http://torstatus.blutmagie.de/ip_list_exit.php/Tor_ip_list_EXIT.csv')
+subprocess.Popen(shlex.split("iptables -N TOR"))
 subprocess.Popen(shlex.split("iptables -F TOR"))
 
 for ip in tor_list.readlines():
