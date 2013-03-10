@@ -1,0 +1,6 @@
+How To use:
+# python torblock.py
+or
+sudo python torblock.py
+
+This script add a chain rule for block tor exit ip
